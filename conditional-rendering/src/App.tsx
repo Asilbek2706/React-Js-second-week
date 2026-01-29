@@ -1,10 +1,16 @@
 import './App.css'
-import PackingList from "./components/PackingList.tsx";
+// import PackingList from "./components/PackingList.tsx";
+import Weather from "./components/Weather.tsx";
+import Notification from "./components/Notification.tsx";
+import UserStatus from "./components/UserStatus.tsx";
 
 function App() {
  return (
      <>
-        <PackingList />
+        {/*<PackingList />*/}
+         <Weather />
+         <Notification />
+         <UserStatus />
      </>
  )
 }
