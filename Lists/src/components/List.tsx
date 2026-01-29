@@ -6,13 +6,22 @@ const people = [
     'Subrahmanyan Chandrasethar: atrophysicist'
 ];
 
-export default function List() {
-    const listItems = people.map(person =>
-        <li key={person}>{person}</li>
-    );
+// export default function List() {
+//     const listItems = people.map(person =>
+//         <li key={person}>{person}</li>
+//     );
+//
+//     return (
+//         <ul>{listItems}</ul>
+//     )
+//
+// }
 
+export default function List() {
     return (
-        <ul>{listItems}</ul>
+        <ul>{people.map(person =>
+            <li key={person}>{person}</li>
+        )}</ul>
     )
 
 }
