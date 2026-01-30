@@ -30,8 +30,8 @@ function App() {
             <div style={{ textAlign: 'center', marginTop: '50px' }}>
                 { number ? 'bir' : 'nol' }
             </div>
-            <button onClick={handleButtonClick}>
-                {number ? 1 : 0}
+            <button onClick={handleButtonClick} style={{ backgroundColor: number ? 'green' : 'red' }}>
+                {number ? 0 : 1}
             </button>
             {/*<Form />*/}
             {/*<SignUp />*/}
