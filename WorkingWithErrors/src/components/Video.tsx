@@ -1,12 +1,14 @@
 import {useContext} from "react";
 import {UserContext} from "../contexts/UserContext.ts";
+import {globalIgnores} from "eslint/config";
 
 const Video = () => {
 
     const { username, changeUsername } = useContext(UserContext)
 
     const handleResetUserName = () => {
-        changeUsername('')
+        // @ts-ignore
+        changeUsername(null)
     }
 
     return (
@@ -19,6 +21,7 @@ const Video = () => {
             <h1>Video</h1>
             <input value={username} onChange={(e) => changeUsername(e.target.value)} />
             <button onClick={handleResetUserName}>Reset</button>
+            <p>Username length: {username.length}</p>
         </div>
     )
 }
