@@ -1,6 +1,5 @@
 import {useContext} from "react";
 import {UserContext} from "../contexts/UserContext.ts";
-import {globalIgnores} from "eslint/config";
 
 const Video = () => {
 
@@ -8,7 +7,7 @@ const Video = () => {
 
     const handleResetUserName = () => {
         // @ts-ignore
-        changeUsername(null)
+        changeUsername(null) // Biz stringni null qilolmaymiz
     }
 
     return (
