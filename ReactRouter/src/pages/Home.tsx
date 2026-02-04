@@ -1,9 +1,6 @@
-
-import Navbar from '../../components/Navbar'
 const Home = () => {
   return (
     <div>
-      <Navbar />
       <div>Home Page</div>
     </div>
   )
