@@ -10,7 +10,7 @@ const Blog = () => {
         <div>
             <h1>Blog nomi: {blogId}</h1>
             <h1>Query Param:</h1>
-               <h2> Filter: {filter},
+            <h2> Filter: {filter},
                 Search: {search}</h2>
         </div>
     )
