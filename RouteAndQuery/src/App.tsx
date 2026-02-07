@@ -25,7 +25,7 @@ function App() {
     }
 
     const handleNavigation = () => {
-        navigate("/another-route");
+        navigate("/another-route", {replace: true});
     }
 
     return (
